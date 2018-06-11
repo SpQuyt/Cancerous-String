@@ -39,9 +39,9 @@ function wannacopy(){
 	document.execCommand("copy");
 }
 
-document.addEventListener("keyup", (event) => {
-    switch (event.keyCode) {
-    	case 13:
-    		change();
-    }
-});
+// document.addEventListener("keyup", (event) => {
+//     switch (event.keyCode) {
+//     	case 13:
+//     		change();
+//     }
+// });
