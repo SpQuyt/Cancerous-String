@@ -44,10 +44,3 @@ function reset(){
 	text.select();
 	document.execCommand("delete");
 }
-
-document.addEventListener("keyup", (event) => {
-    switch (event.keyCode) {
-    	case 13:
-    		change();
-    }
-});
