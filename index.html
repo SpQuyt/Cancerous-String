@@ -4,17 +4,23 @@
 	<title>cANceROus sTrINgs</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="style.css" href="">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<h1 id="quoc">Nhập câu bạn muốn biến thành "UnG tHư".
+	<h1 id="quoc">
+		Nhập câu bạn muốn biến thành "UnG tHư".
 	</h1>
 
+	<div>
+		<textarea id = "InputString" class= "Cena"></textarea> 
+	</div>
+	<button onclick = "change()">cAnCeRiZe It!</button>
+	<div>
+		<textarea id = "demo" class= "Cena"></textarea> 
+	</div>
+	<button onclick = "wannacopy()">CoPY iT!</button>
 
-	<input id = "InputString" type="text" style = "font-size: 20px; width: 100%;"></br></br>
-	<button onclick="change()">cAnCeRiZe it!</button>
-	<p id ="demo"></p>
 	<script src="script.js"></script>
 </body>
 </html>
