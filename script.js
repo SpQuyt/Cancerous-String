@@ -39,9 +39,15 @@ function wannacopy(){
 	document.execCommand("copy");
 }
 
-// document.addEventListener("keyup", (event) => {
-//     switch (event.keyCode) {
-//     	case 13:
-//     		change();
-//     }
-// });
+function reset(){
+	var text = document.querySelector("#InputString");
+	text.select();
+	document.execCommand("delete");
+}
+
+document.addEventListener("keyup", (event) => {
+    switch (event.keyCode) {
+    	case 13:
+    		change();
+    }
+});
