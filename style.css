@@ -53,19 +53,28 @@ button {
 	width: 300px;
 }
 
-/*div {
-	display: block;
+.col-4 {
+	display: inline-block;
+	width: 49.5%;				/*doi khi chia doi man hinh deo phai la 50%*/
 }
 
-div .nanibutton {
+
+.col-4 button {
+	display: block;
 	margin-bottom: 10px;
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
-	background-color: pink;
-	height: 50px;
+    margin-top: 10px;
 	width: 150px;
-}*/
+}
+
+#nanibutton1 {
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#nanibutton2 {
+    margin-left: 0;
+    margin-right: auto;
+}
 
 button:hover {
 	background-color: red;
@@ -73,8 +82,8 @@ button:hover {
 	font-size: 30px;
 }
 
-/*.nanibutton:hover {
+#nanibutton1:hover {
 	background-color: red;
 	font-weight: bold;
 	font-size: 20px;
-}*/
+}
