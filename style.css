@@ -55,9 +55,12 @@ button {
 
 .col-4 {
 	display: inline-block;
-	width: 49.5%;				/*doi khi chia doi man hinh deo phai la 50%*/
+	width: 50%;				/*doi khi chia doi man hinh deo phai la 50%*/
 }
 
+#col-4-2 {
+	width: 49.5%;
+}
 
 .col-4 button {
 	display: block;
