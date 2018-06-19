@@ -1,36 +1,27 @@
 var counter = 0;
-function color_fking_change(counter) {
-	if (counter == 10){
-		counter = 0;
+setInterval(function () {
+	if (counter % 4 == 0){
+		document.getElementById("quoc").style.color = "red";
 	}
-	else{
-		colorchange1 = setTimeout(
-		function() {
-			document.getElementById("quoc").style.color = "red";
-		},1000);
-	colorchange2 = setTimeout(
-		function() {
-			document.getElementById("quoc").style.color = "black";
-		},1800);
-	colorchange3 = setTimeout(
-		function() {
-			document.getElementById("quoc").style.color = "yellow";
-		},2600);
-	colorchange4 = setTimeout(
-		function() {
-			document.getElementById("quoc").style.color = "green";
-		},3400);
-	
+	else if (counter % 4 == 1){
+		document.getElementById("quoc").style.color = "black";
 	}
-	color_fking_change(counter+1);
-}
+	else if (counter % 4 == 2){
+		document.getElementById("quoc").style.color = "yellow";
+	}
+	else if (counter % 4 == 3){
+		document.getElementById("quoc").style.color = "green";
+	}
+	counter++;
+},500);
+
 	
 	// clearTimeout(colorchange1);
 	// clearTimeout(colorchange2);
 	// clearTimeout(colorchange3);
 	// clearTimeout(colorchange4);
 
-setInterval(color_fking_change(),0);
+
 function change(){
 	var inString = document.getElementById("InputString").value;
 	var len = inString.length;
