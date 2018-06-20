@@ -4,7 +4,7 @@ setInterval(function () {
 		document.getElementById("quoc").style.color = "red";
 	}
 	else if (counter % 4 == 1){
-		document.getElementById("quoc").style.color = "black";
+		document.getElementById("quoc").style.color = "blue";
 	}
 	else if (counter % 4 == 2){
 		document.getElementById("quoc").style.color = "yellow";
@@ -13,7 +13,7 @@ setInterval(function () {
 		document.getElementById("quoc").style.color = "green";
 	}
 	counter++;
-},500);
+},100);
 
 	
 	// clearTimeout(colorchange1);
